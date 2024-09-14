@@ -5,9 +5,6 @@ export default function Page(){
     
     return (
         <>
-            <div className="navbar bg-base-100 absolute">
-                <Link className="btn btn-ghost text-xl" href="/">EZDatabase</Link>
-            </div>
             <LoginForm />
         </>
         

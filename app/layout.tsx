@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link"
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -28,7 +29,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="navbar bg-base-100 sticky">
+              <Link className="btn btn-ghost text-xl" href="/">EZDatabase</Link>
+        </div>
+        <main>
+            {children}
+        </main>
       </body>
     </html>
   );
