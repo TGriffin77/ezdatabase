@@ -66,10 +66,11 @@ export default function QueryPage(){
                 {renderList(availableItems, 'available')}
             </div>
             <div className="flex-1">
-                <h1>User's Query</h1>
+                <h1>User&apos;s Query</h1>
                 {renderList(selectedItems, 'selected')}
             </div>
             <div className="flex-1">Output Data</div>
+            <CodeBlock />
         </div>
     )
 }

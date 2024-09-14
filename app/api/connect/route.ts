@@ -15,7 +15,7 @@ export async function POST(request: NextRequest){
     })    
 
     try{
-        const db = (await pool.getConnection()).ping()
+        (await pool.getConnection()).ping()
 
         return NextResponse.json({message:"Authorized"}, {status:200})
     }
